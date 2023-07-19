@@ -1,0 +1,205 @@
+body{
+    /*Margen predeterminado*/
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    /*Margen hacia adentro*/
+    padding: 0;
+    /*Tamaño y fuente del texto*/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*************************************************/
+/*Navegación en header*/
+header{
+    width: 100%;
+    height: 50px;
+}
+
+header nav{
+    background-color: rgb(255, 255, 255);
+    /*mover elementos*//*Display especifica si un elementos es tratado como caja o fuera de linea*/
+    display: flex;
+    justify-content: flex-end;
+}
+    /*ul class en header nav*/
+header nav .nav-derecha{
+    background-color: rgb(255, 255, 255);
+    /*eliminar o añadir viñetas*/
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/*Estilo del texto de nav*/
+nav .nav-derecha a{
+    /*color de texto*/
+    color: rgb(21, 21, 21);
+    /*línea debajo del texto del menu*/
+    text-decoration: auto; 
+    margin-right: 10px;
+}
+/*Estilo del menú de nav*/
+nav .nav-derecha .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Estilo de la foto de perfil*/
+nav .nav-derecha img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/*Estilos main*/
+main{
+    margin-top: 100px;
+    text-align: center;
+}
+/*estilo  de la posición del logo de Google, tamaño y margen*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+/*estilo del logo de la imagen de Google, tamaño*/
+main .main-logo img{
+    width: 272px;
+    height: 92px;
+}
+
+/*estilo del buscador, posición*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+/*estilo del buscador, inclye borde y alineación de los elementos dentro. MAIN INPUT, se refiere cuando se concentra únicamente en un objetivo y manda información, el buscador de Google, inclye el micro y lupa */
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    display: flex;
+    padding: 5px 8px 0 14px
+}
+
+/*sombra para el buscador*/
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+/*Estilo del ícono de la lupa dentro del buscador, tamaño y posición*/
+main .main-input .search-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+/*Estilo del ícono del micro dentro del buscador, tamaño y posición*/
+main .main-input .icono-micro{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+/*Tamaño de los dos botones debajo del buscador*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+/*Alinear y dividir botones*/
+main .main-buttons div{
+    display: inline-block;
+}
+
+/*Estilo de color y margen de los botones*/
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 14px;
+    color: #080808;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+/*Sombra de los botones*/
+main .main-buttons button:hover{
+    border: 1px solid #dadce0;
+    box-shadow:  1 px #dadce0;
+    color: #0e0f0f ;
+}
+/*Decoración del texto dentro de los botones*/
+main .main-buttons a{
+    text-decoration: none;
+}
+
+
+/*Footer parte inferior*/
+
+/*edición del footer(barra) tamaño, columna, posición*/
+footer{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 2px solid #e4e4e4;
+}
+/*edición del texto*/
+footer ul{
+    display: flex;
+    list-style: none;
+    margin: 12px;
+    padding-left: 0;
+}
+/*justificación del texto lado izquierdo*/
+footer .footer-left{
+    justify-self: left;
+    margin-left: 36px;
+}
+/*Quitar línea debajo de la letra del footer*/
+footer .footer-left a{
+    text-decoration: none;
+}
+/*justificación del texto lado derecho*/
+footer .footer-right{
+    justify-self: right;
+    margin-right: 36px;
+}
+footer .footer-right a{
+    text-decoration: none;
+}
+
+/*estilo de la letra, separación y color de la letra*/
+footer ul li a{
+    margin: 12px;
+    color: #5f6368;
+}
